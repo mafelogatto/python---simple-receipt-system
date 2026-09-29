@@ -43,5 +43,5 @@ if idade >= 0:
   print('Aviso: Verifique a classificação indicativa do filme.')
   print('Tenha um bom filme.')
 else:
-  print('Idade inválida. Digite uma idade válida)
+  print('Idade inválida. Digite uma idade válida')
   
