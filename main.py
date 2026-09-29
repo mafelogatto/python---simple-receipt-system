@@ -8,26 +8,26 @@ idade = int(idade)
 tem_carteirinha = tem_carteirinha.lower()
 
 #strings and logical operators
-usuario_vip = ''vip'' in nome.lower()
+usuario_vip = "vip" in nome.lower()
 
 #conditional structure
 if idade < 0:
   preco_final = 0.0
-  categoria = ''Inválida''
-elif idade < 12 or idade >= 60 or tem_carteirinha == ''sim'' or tem_carteirinha == ''s'':
+  categoria = "Inválida"
+elif idade < 12 or idade >= 60 or tem_carteirinha == "sim" or tem_carteirinha == "s":
   preco_final = valor_base_ingresso / 2
   if idade < 12:
-    categoria = ''Meia-Entrada (Infantil)''
+    categoria = "Meia-Entrada (Infantil)"
   elif idade >= 60:
-    categoria = ''Meia-Entrada (Idoso)''
+    categoria = "Meia-Entrada (Idoso)"
   else:
     preco_final = valor_base_ingresso
-    categoria = ''Inteira''
+    categoria = "Inteira"
 
 #math and extra rules
-if usuario_vip and categoria == ''Inteira'':
+if usuario_vip and categoria == "Inteira":
   preco_final = preco_final * 0.9
-  categoria = ''Inteira Desconto VIP''
+  categoria = "Inteira Desconto VIP"
 
 #output
 
